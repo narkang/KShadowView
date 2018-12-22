@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">ShadowLayout</string>
+
+    <!-- MainActivity begin -->
+    <string name="main_to_show">Click to ShowActivity.</string>
+    <string name="main_to_dynamic_change">Click to DynamicChangeActivity.</string>
+    <string name="main_to_list">Click to ListActivity.</string>
+    <!-- MainActivity end -->
+
+    <!-- DynamicChangeActivity begin -->
+    <string name="dynamic_activity_title">DynamicChangeActivity</string>
+    <string name="dynamic_change_oval_color">Click to change the color of oval shadow</string>
+    <string name="dynamic_change_rectangle_color">Click to change the color of rectangle shadow</string>
+    <string name="dynamic_change_shadow_radius">Click to change the radius of shadow</string>
+    <!-- DynamicChangeActivity end -->
+
+    <!-- ShowActivity begin -->
+    <string name="show_title">Show Shadow</string>
+    <!-- ShowActivity end -->
+
+    <!-- AboutActivity begin -->
+    <string name="about">about</string>
+    <string name="about_activity_title">About</string>
+    <string name="about_contact_me">Contact Me</string>
+    <string name="about_github"><![CDATA[\t Github: <font color=\'#3F51B5\'>%s</font>]]></string>
+    <string name="about_weibo"><![CDATA[\t Weibo: <font color=\'#3F51B5\'>%s(lijiankun24)</font>]]></string>
+    <string name="about_blog"><![CDATA[\t Blog: <font color=\'#3F51B5\'>%s</font>]]></string>
+    <string name="about_jianshu"><![CDATA[\t Jianshu: <font color=\'#3F51B5\'>%s</font>]]></string>
+    <string name="about_mail"><![CDATA[\t Mail: <font color=\'#3F51B5\'>%s</font>]]></string>
+    <!-- AboutActivity end -->
+</resources>
