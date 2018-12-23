@@ -1,8 +1,9 @@
 <resources>
-    <string name="app_name">ShadowLayout</string>
+    <string name="app_name">KShadowView</string>
 
     <!-- MainActivity begin -->
-    <string name="main_to_show">Click to ShowActivity.</string>
+    <string name="main_to_show_v1">Click to ShowV1Activity.</string>
+    <string name="main_to_show_v2">Click to ShowV2Activity.</string>
     <string name="main_to_dynamic_change">Click to DynamicChangeActivity.</string>
     <string name="main_to_list">Click to ListActivity.</string>
     <!-- MainActivity end -->
@@ -14,9 +15,9 @@
     <string name="dynamic_change_shadow_radius">Click to change the radius of shadow</string>
     <!-- DynamicChangeActivity end -->
 
-    <!-- ShowActivity begin -->
+    <!-- ShowV2Activity begin -->
     <string name="show_title">Show Shadow</string>
-    <!-- ShowActivity end -->
+    <!-- ShowV2Activity end -->
 
     <!-- AboutActivity begin -->
     <string name="about">about</string>

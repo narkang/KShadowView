@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -16,27 +15,37 @@
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:title="@string/app_name"
-        app:titleTextColor="@android:color/white"/>
+        app:titleTextColor="@android:color/white" />
+
+    <View style="@style/LineStyle" />
 
     <TextView
-        android:id="@+id/tv_to_show"
+        android:id="@+id/tv_to_show_v1"
         style="@style/TextViewStyle"
-        android:text="@string/main_to_show"/>
+        android:text="@string/main_to_show_v1" />
 
-    <View style="@style/LineStyle"/>
+    <View style="@style/LineStyle" />
+
+    <TextView
+        android:id="@+id/tv_to_show_v2"
+        style="@style/TextViewStyle"
+        android:text="@string/main_to_show_v2" />
+
+
+    <View style="@style/LineStyle" />
 
     <TextView
         android:id="@+id/tv_to_dynamic_change"
         style="@style/TextViewStyle"
-        android:text="@string/main_to_dynamic_change"/>
+        android:text="@string/main_to_dynamic_change" />
 
-    <View style="@style/LineStyle"/>
+    <View style="@style/LineStyle" />
 
     <TextView
         android:id="@+id/tv_to_list"
         style="@style/TextViewStyle"
-        android:text="@string/main_to_list"/>
+        android:text="@string/main_to_list" />
 
-    <View style="@style/LineStyle"/>
+    <View style="@style/LineStyle" />
 </LinearLayout>
 
