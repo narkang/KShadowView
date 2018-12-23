@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:gravity="center_horizontal"
     >
 
-    <com.lijiankun24.kshadow.v2.ShadowLayout
+    <com.narkang.kshadow.v2.KShadowView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:shadowColor="#88880000"
@@ -18,5 +17,5 @@
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:gravity="center" />
-    </com.lijiankun24.kshadow.v2.ShadowLayout>
+    </com.narkang.kshadow.v2.KShadowView>
 </LinearLayout>

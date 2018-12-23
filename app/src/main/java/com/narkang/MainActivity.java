@@ -8,7 +8,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.narkang.about.AboutActivity;
 import com.narkang.list.ListActivity;
 
 public class MainActivity extends AppCompatActivity implements Toolbar.OnMenuItemClickListener,
@@ -46,7 +45,6 @@ public class MainActivity extends AppCompatActivity implements Toolbar.OnMenuIte
     public boolean onMenuItemClick(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.menu_main_about:
-                startActivity(new Intent(MainActivity.this, AboutActivity.class));
                 break;
         }
         return true;

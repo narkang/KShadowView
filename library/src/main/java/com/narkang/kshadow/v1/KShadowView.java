@@ -1,4 +1,4 @@
-package com.narkang.kshadow;
+package com.narkang.kshadow.v1;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -11,14 +11,9 @@ import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.RelativeLayout;
 
+import com.narkang.kshadow.R;
 
-/**
- * ShadowLayout.java
- * <p>
- * Created by lijiankun on 17/8/11.
- */
-
-public class ShadowLayout extends RelativeLayout {
+public class KShadowView extends RelativeLayout {
 
     public static final int ALL = 0x1111;
 
@@ -68,15 +63,15 @@ public class ShadowLayout extends RelativeLayout {
      */
     private int mShadowShape = SHAPE_RECTANGLE;
 
-    public ShadowLayout(Context context) {
+    public KShadowView(Context context) {
         this(context, null);
     }
 
-    public ShadowLayout(Context context, AttributeSet attrs) {
+    public KShadowView(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public ShadowLayout(Context context, AttributeSet attrs, int defStyleAttr) {
+    public KShadowView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         init(attrs);
     }
@@ -161,15 +156,15 @@ public class ShadowLayout extends RelativeLayout {
         setLayerType(View.LAYER_TYPE_SOFTWARE, null);  // 关闭硬件加速
         this.setWillNotDraw(false);                    // 调用此方法后，才会执行 onDraw(Canvas) 方法
 
-        TypedArray typedArray = getContext().obtainStyledAttributes(attrs, R.styleable.ShadowLayout);
+        TypedArray typedArray = getContext().obtainStyledAttributes(attrs, R.styleable.KShadowView);
         if (typedArray != null) {
-            mShadowColor = typedArray.getColor(R.styleable.ShadowLayout_shadowColor,
+            mShadowColor = typedArray.getColor(R.styleable.KShadowView_shadowColor,
                     getContext().getResources().getColor(android.R.color.black));
-            mShadowRadius = typedArray.getDimension(R.styleable.ShadowLayout_shadowRadius, dip2px(0));
-            mShadowDx = typedArray.getDimension(R.styleable.ShadowLayout_shadowDx, dip2px(0));
-            mShadowDy = typedArray.getDimension(R.styleable.ShadowLayout_shadowDy, dip2px(0));
-            mShadowSide = typedArray.getInt(R.styleable.ShadowLayout_shadowSide, ALL);
-            mShadowShape = typedArray.getInt(R.styleable.ShadowLayout_shadowShape, SHAPE_RECTANGLE);
+            mShadowRadius = typedArray.getDimension(R.styleable.KShadowView_shadowRadius, dip2px(0));
+            mShadowDx = typedArray.getDimension(R.styleable.KShadowView_shadowDx, dip2px(0));
+            mShadowDy = typedArray.getDimension(R.styleable.KShadowView_shadowDy, dip2px(0));
+            mShadowSide = typedArray.getInt(R.styleable.KShadowView_shadowSide, ALL);
+            mShadowShape = typedArray.getInt(R.styleable.KShadowView_shadowShape, SHAPE_RECTANGLE);
             typedArray.recycle();
         }
         setUpShadowPaint();

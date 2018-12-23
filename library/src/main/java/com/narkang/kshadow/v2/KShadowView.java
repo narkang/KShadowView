@@ -45,7 +45,7 @@ import com.narkang.kshadow.R;
  *
  * </resources>
  */
-public class ShadowLayout extends FrameLayout {
+public class KShadowView extends FrameLayout {
 
     public static final int ALL = 0x1111;
 
@@ -98,7 +98,7 @@ public class ShadowLayout extends FrameLayout {
      */
     private int mShadowShape = SHAPE_RECTANGLE;
 
-    private ShadowDrawable mShadowDrawable;
+    private KShadowDrawable mShadowDrawable;
 
     /**
      *  测量之前的宽度
@@ -110,35 +110,35 @@ public class ShadowLayout extends FrameLayout {
      */
     private float beforeMeasureHeight = 0;
 
-    public ShadowLayout(@NonNull Context context) {
+    public KShadowView(@NonNull Context context) {
         this(context, null, 0);
     }
 
-    public ShadowLayout(@NonNull Context context, @Nullable AttributeSet attrs) {
+    public KShadowView(@NonNull Context context, @Nullable AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public ShadowLayout(@NonNull Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public KShadowView(@NonNull Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         initialize(attrs);
     }
 
     private void initialize(@Nullable AttributeSet attrs) {
-        TypedArray typedArray = getContext().obtainStyledAttributes(attrs, R.styleable.ShadowLayout);
+        TypedArray typedArray = getContext().obtainStyledAttributes(attrs, R.styleable.KShadowView);
         if (typedArray != null) {
-            mShadowShape = typedArray.getInt(R.styleable.ShadowLayout_shadowShape, SHAPE_RECTANGLE);
-            mShadowRadius = typedArray.getDimension(R.styleable.ShadowLayout_shadowRadius, 0);
-            mShadowColor = typedArray.getColor(R.styleable.ShadowLayout_shadowColor,
+            mShadowShape = typedArray.getInt(R.styleable.KShadowView_shadowShape, SHAPE_RECTANGLE);
+            mShadowRadius = typedArray.getDimension(R.styleable.KShadowView_shadowRadius, 0);
+            mShadowColor = typedArray.getColor(R.styleable.KShadowView_shadowColor,
                     getContext().getResources().getColor(android.R.color.black));
-            mShadowDx = typedArray.getDimension(R.styleable.ShadowLayout_shadowDx, 0);
-            mShadowDy = typedArray.getDimension(R.styleable.ShadowLayout_shadowDy, 0);
-            mShadowSide = typedArray.getInt(R.styleable.ShadowLayout_shadowSide, ALL);
-            mShadowRoundRadius = typedArray.getDimension(R.styleable.ShadowLayout_shadowRoundRadius, 0);
+            mShadowDx = typedArray.getDimension(R.styleable.KShadowView_shadowDx, 0);
+            mShadowDy = typedArray.getDimension(R.styleable.KShadowView_shadowDy, 0);
+            mShadowSide = typedArray.getInt(R.styleable.KShadowView_shadowSide, ALL);
+            mShadowRoundRadius = typedArray.getDimension(R.styleable.KShadowView_shadowRoundRadius, 0);
 
             typedArray.recycle();
         }
 
-        mShadowDrawable = new ShadowDrawable(mShadowShape, mShadowColor,
+        mShadowDrawable = new KShadowDrawable(mShadowShape, mShadowColor,
                 mShadowRadius, mShadowDx, mShadowDy, mShadowRoundRadius);
         setLayerType(View.LAYER_TYPE_SOFTWARE, null);       // 关闭硬件加速
     }
@@ -226,7 +226,7 @@ public class ShadowLayout extends FrameLayout {
     protected void dispatchDraw(Canvas canvas) {
 //        Log.i("ShadowLayout", "ShadowLayout dispatchDraw");
         super.dispatchDraw(canvas);
-        ViewCompat.setBackground(ShadowLayout.this, mShadowDrawable);
+        ViewCompat.setBackground(KShadowView.this, mShadowDrawable);
     }
 
 //    @Override

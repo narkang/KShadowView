@@ -6,15 +6,15 @@ import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.View;
 
-import com.narkang.kshadow.ShadowLayout;
+import com.narkang.kshadow.v1.KShadowView;
 
 public class DynamicChangeActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private ShadowLayout SlOval = null;
+    private KShadowView SlOval = null;
 
 //    private ShadowLayout SlRectangle = null;
 
-    private ShadowLayout SlRadius = null;
+    private KShadowView SlRadius = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

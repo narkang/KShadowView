@@ -41,7 +41,7 @@
 
             <View style="@style/LineStyle"/>
 
-            <com.narkang.kshadow.ShadowLayout
+            <com.narkang.kshadow.v1.KShadowView
                 android:id="@+id/sl_oval"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -67,7 +67,7 @@
                     android:text="Oval shadow"
                     android:textColor="@android:color/white"
                     android:textSize="14sp"/>
-            </com.narkang.kshadow.ShadowLayout>
+            </com.narkang.kshadow.v1.KShadowView>
 
             <View style="@style/LineStyle"/>
 
@@ -112,7 +112,7 @@
 
             <View style="@style/LineStyle"/>
 
-            <com.narkang.kshadow.ShadowLayout
+            <com.narkang.kshadow.v1.KShadowView
                 android:id="@+id/sl_radius"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -135,7 +135,7 @@
                     android:text="Radius shadow"
                     android:textColor="@android:color/white"
                     android:textSize="14sp"/>
-            </com.narkang.kshadow.ShadowLayout>
+            </com.narkang.kshadow.v1.KShadowView>
         </LinearLayout>
     </ScrollView>
 </android.support.constraint.ConstraintLayout>

@@ -2,7 +2,7 @@
 <resources>
 
     <!-- ShadowLayout 阴影 -->
-    <declare-styleable name="ShadowLayout">
+    <declare-styleable name="KShadowView">
         <attr name="shadowColor" format="color"/>
         <attr name="shadowRadius" format="dimension"/>
         <attr name="shadowDx" format="dimension"/>

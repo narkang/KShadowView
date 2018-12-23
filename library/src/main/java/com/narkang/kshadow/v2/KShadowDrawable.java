@@ -13,15 +13,13 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.util.Log;
 
-import com.narkang.kshadow.v2.ShadowLayout;
-
 /**
- * ShadowDrawable
+ * KShadowDrawable
  * <p>
  * Created by lijiankun on 2018/9/28
  * Email: lijiankun03@meituan.com
  */
-public class ShadowDrawable extends Drawable {
+public class KShadowDrawable extends Drawable {
 
     private Paint mShadowPaint;
     private int mShape;
@@ -31,7 +29,7 @@ public class ShadowDrawable extends Drawable {
     private float mOffsetY;
     private RectF mRect;
 
-    public ShadowDrawable(int shape, int shadowColor, float shadowRadius, float offsetX, float offsetY, float roundRadius) {
+    public KShadowDrawable(int shape, int shadowColor, float shadowRadius, float offsetX, float offsetY, float roundRadius) {
         this.mShape = shape;
         this.mShadowRadius = shadowRadius;
         this.mOffsetX = offsetX;
@@ -64,11 +62,11 @@ public class ShadowDrawable extends Drawable {
     public void draw(@NonNull Canvas canvas) {
         Log.i("ShadowLayout3", "ShadowDrawable1 draw " + canvas);
 
-        if (mShape == ShadowLayout.SHAPE_RECTANGLE) {
+        if (mShape == KShadowView.SHAPE_RECTANGLE) {
             canvas.drawRect(mRect, mShadowPaint);
-        } else if (mShape == ShadowLayout.SHAPE_OVAL) {
+        } else if (mShape == KShadowView.SHAPE_OVAL) {
             canvas.drawCircle(mRect.centerX(), mRect.centerY(), Math.min(mRect.width(), mRect.height()) / 2, mShadowPaint);
-        } else if(mShape == ShadowLayout.SHAPE_ROUND_RECTANGLE){
+        } else if(mShape == KShadowView.SHAPE_ROUND_RECTANGLE){
             canvas.drawRoundRect(mRect, mRoundRadius, mRoundRadius, mShadowPaint);
         }
     }
