@@ -29,6 +29,8 @@ public class KShadowView extends RelativeLayout {
 
     public static final int SHAPE_OVAL = 0x0010;
 
+    public static final int SHAPE_ROUND_RECTANTGLE = 0x0100;
+
     private Paint mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
 
     private RectF mRectF = new RectF();
@@ -42,6 +44,11 @@ public class KShadowView extends RelativeLayout {
      * 阴影的大小范围
      */
     private float mShadowRadius = 0;
+
+    /**
+     *  圆角的大小
+     */
+    private float mShadowRoundRadius = 0;
 
     /**
      * 阴影 x 轴的偏移量
@@ -132,6 +139,8 @@ public class KShadowView extends RelativeLayout {
             canvas.drawRect(mRectF, mPaint);
         } else if (mShadowShape == SHAPE_OVAL) {
             canvas.drawCircle(mRectF.centerX(), mRectF.centerY(), Math.min(mRectF.width(), mRectF.height()) / 2, mPaint);
+        }else if (mShadowShape == SHAPE_ROUND_RECTANTGLE){
+            canvas.drawRoundRect(mRectF, mShadowRoundRadius, mShadowRoundRadius, mPaint);
         }
     }
 
@@ -165,6 +174,8 @@ public class KShadowView extends RelativeLayout {
             mShadowDy = typedArray.getDimension(R.styleable.KShadowView_shadowDy, dip2px(0));
             mShadowSide = typedArray.getInt(R.styleable.KShadowView_shadowSide, ALL);
             mShadowShape = typedArray.getInt(R.styleable.KShadowView_shadowShape, SHAPE_RECTANGLE);
+            mShadowRoundRadius = typedArray.getDimension(R.styleable.KShadowView_shadowRoundRadius, 0);
+
             typedArray.recycle();
         }
         setUpShadowPaint();
