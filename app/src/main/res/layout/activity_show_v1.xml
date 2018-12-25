@@ -9,6 +9,12 @@
     android:background="#FFF"
     tools:context=".ShowV1Activity">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="直角矩形"
+        />
+
     <com.narkang.kshadow.v1.KShadowView
         android:layout_width="300dp"
         android:layout_height="110dp"
@@ -16,6 +22,7 @@
         app:shadowColor="#99000000"
         app:shadowRadius="10dp"
         app:shadowShape="rectangle"
+        app:shadowSide="bottom"
         >
         <LinearLayout
             android:gravity="center"
@@ -29,6 +36,12 @@
                 />
         </LinearLayout>
     </com.narkang.kshadow.v1.KShadowView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="圆行"
+        />
 
     <com.narkang.kshadow.v1.KShadowView
         android:layout_width="110dp"
@@ -52,6 +65,12 @@
                 />
         </LinearLayout>
     </com.narkang.kshadow.v1.KShadowView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="圆角矩形"
+        />
 
     <com.narkang.kshadow.v1.KShadowView
         android:layout_width="300dp"

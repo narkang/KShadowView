@@ -14,11 +14,10 @@
         </attr>
         <attr name="shadowSide">
             <flag name="all" value="0x1111"/>
-            <!--添加了圆角支持，目前不支持单边设置阴影-->
-            <!--<flag name="left" value="0x0001"/>-->
-            <!--<flag name="top" value="0x0010"/>-->
-            <!--<flag name="right" value="0x0100"/>-->
-            <!--<flag name="bottom" value="0x1000"/>-->
+            <flag name="left" value="0x0001"/>
+            <flag name="top" value="0x0010"/>
+            <flag name="right" value="0x0100"/>
+            <flag name="bottom" value="0x1000"/>
         </attr>
         <attr name="shadowRoundRadius" format="dimension"/>
     </declare-styleable>

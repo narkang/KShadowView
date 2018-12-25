@@ -9,11 +9,11 @@ import android.graphics.RectF;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
 import android.view.View;
-import android.widget.RelativeLayout;
+import android.widget.FrameLayout;
 
 import com.narkang.kshadow.R;
 
-public class KShadowView extends RelativeLayout {
+public class KShadowView extends FrameLayout {
 
     public static final int ALL = 0x1111;
 
