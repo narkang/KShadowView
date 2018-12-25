@@ -35,13 +35,6 @@
     <View style="@style/LineStyle" />
 
     <TextView
-        android:id="@+id/tv_to_dynamic_change"
-        style="@style/TextViewStyle"
-        android:text="@string/main_to_dynamic_change" />
-
-    <View style="@style/LineStyle" />
-
-    <TextView
         android:id="@+id/tv_to_list"
         style="@style/TextViewStyle"
         android:text="@string/main_to_list" />

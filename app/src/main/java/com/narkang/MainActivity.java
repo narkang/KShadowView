@@ -29,9 +29,6 @@ public class MainActivity extends AppCompatActivity implements Toolbar.OnMenuIte
             case R.id.tv_to_show_v2:
                 startActivity(new Intent(MainActivity.this, ShowV2Activity.class));
                 break;
-            case R.id.tv_to_dynamic_change:
-                startActivity(new Intent(MainActivity.this, DynamicChangeActivity.class));
-                break;
             case R.id.tv_to_list:
                 startActivity(new Intent(MainActivity.this, ListActivity.class));
                 break;

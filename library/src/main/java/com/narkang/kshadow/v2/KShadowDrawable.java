@@ -15,9 +15,6 @@ import android.util.Log;
 
 /**
  * KShadowDrawable
- * <p>
- * Created by lijiankun on 2018/9/28
- * Email: lijiankun03@meituan.com
  */
 public class KShadowDrawable extends Drawable {
 

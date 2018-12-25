@@ -18,7 +18,6 @@
         </activity>
         <activity android:name=".ShowV2Activity" />
         <activity android:name=".ShowV1Activity" />
-        <activity android:name=".DynamicChangeActivity" />
         <activity android:name=".list.ListActivity" />
     </application>
 
