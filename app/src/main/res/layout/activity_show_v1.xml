@@ -40,7 +40,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="圆行"
+        android:text="圆形"
         />
 
     <com.narkang.kshadow.v1.KShadowView
