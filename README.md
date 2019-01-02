@@ -19,6 +19,10 @@ android阴影效果，参考这位大佬的[ShadowLayout](https://github.com/lij
 ## 使用
 
 ```
+    //1
+    compile 'com.narkang:kshadow:1.0.0'
+
+    //2
     //v1
     //矩形/圆角矩形/圆形
     <com.narkang.kshadow.v1.KShadowView
